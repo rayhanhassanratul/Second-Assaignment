@@ -282,6 +282,14 @@
   margin-top: 25px;
 }
 
+/* footer */
+.footer-container {
+  max-height: 1120px;
+  max-height: 250px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-top: 70px;
+}
 /* responsive mobile  */
 
 /* nav  */
