@@ -240,6 +240,48 @@
 .shop-now {
   color: white;
 }
+
+/* join section */
+.join {
+  background-image: url(assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  margin-top: 120px;
+  background-size: cover;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sub {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "inter", serif;
+  color: white;
+  background-color: #e95a08;
+  width: 190px;
+  height: 50px;
+}
+
+.input {
+  width: 645px;
+  height: 50px;
+  background-color: white;
+  padding-left: 20px;
+}
+
+.join-title {
+  font-family: "noto serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.input-btn {
+  display: flex;
+  margin-top: 25px;
+}
+
 /* responsive mobile  */
 
 /* nav  */
