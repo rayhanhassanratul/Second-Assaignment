@@ -113,6 +113,45 @@
 
   margin-top: 30px;
 }
+
+/* flowers lover section */
+
+.lover {
+  max-width: 1140px;
+  margin-left: 150px;
+  gap: 60px;
+}
+
+.love-info {
+  margin-top: 50px;
+}
+.lover-title {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "noto serif", serif;
+}
+
+.love-des {
+  margin-top: 20px;
+  font-size: 22px;
+  font-family: "inter", serif;
+}
+
+/* challenge */
+.trusted {
+  position: relative;
+  margin-top: 200px;
+  height: auto;
+}
+
+.challenge {
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  transform: translateX(-86%);
+  width: 286px;
+  z-index: 10;
+}
 /* responsive mobile  */
 
 /* nav  */
