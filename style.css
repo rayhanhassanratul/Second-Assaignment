@@ -1,1 +1,141 @@
 @import "Tailwindcss";
+
+/* shared styles  */
+
+.orange {
+  color: #e95a08;
+}
+
+.gray {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* nav bar styles  */
+.navbar {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.nav-link {
+  margin-left: 48px;
+}
+
+.nav-item {
+  margin-top: 63px;
+}
+
+.logo {
+  margin-top: 24px;
+  width: 135px;
+  height: 82px;
+}
+
+/* banner section styles */
+.banner {
+  /* max-width: 1140px;
+  max-height: 460px; */
+  margin-top: 230px;
+  margin-left: 198px;
+}
+.banner-info {
+  padding-top: 162px;
+}
+
+.banner-title {
+  font-family: "noto serif", serif;
+  font-weight: bold;
+  font-size: 65px;
+}
+
+.banner-img {
+  margin-top: 100px;
+  width: 670px;
+  height: 455px;
+}
+
+/* plants and card section  */
+.plants {
+  max-width: 1140px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.palnt-title {
+  font-family: "noto serif", serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+.plant-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plant-description {
+  font-family: "inter" serif;
+  font-size: 22px;
+}
+
+.cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  /* margin-left: 150px;
+  margin-right: 150px; */
+  gap: 30px;
+}
+.card {
+  max-width: 270px;
+  height: auto;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "inter", serif;
+  margin-top: 30px;
+}
+
+.card-price {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: "inter", serif;
+  margin-top: 20px;
+}
+
+.card-btn {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "inter", serif;
+  color: white;
+  background-color: #e95a08;
+  width: 270px;
+  height: 50px;
+
+  margin-top: 30px;
+}
+/* responsive mobile  */
+
+/* nav  */
+@media screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .navbar {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .nav-item {
+    margin-top: 40px;
+  }
+
+  /* banner */
+  .banner {
+    flex-direction: column;
+  }
+}
