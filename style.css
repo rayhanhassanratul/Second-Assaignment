@@ -12,7 +12,7 @@
 
 /* nav bar styles  */
 .navbar {
-  margin-left: 150px;
+  margin-left: 200px;
   margin-right: 150px;
 }
 
@@ -56,7 +56,7 @@
 /* plants and card section  */
 .plants {
   max-width: 1140px;
-  margin-left: 150px;
+  margin-left: 200px;
   margin-right: 150px;
 }
 .palnt-title {
@@ -118,7 +118,7 @@
 
 .lover {
   max-width: 1140px;
-  margin-left: 150px;
+  margin-left: 200px;
   gap: 60px;
 }
 
