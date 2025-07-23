@@ -152,6 +152,94 @@
   width: 286px;
   z-index: 10;
 }
+
+/* deals section */
+
+.deals-description {
+  font-family: "inter", serif;
+  font-size: 22px;
+}
+
+.deals-title {
+  font-family: "noto serif" serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.latest-deals {
+  margin-top: 140px;
+}
+
+/* discount section */
+.discount1 {
+  background-image: url(assets/deal-bloom.png);
+  width: 370px;
+  height: 201px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.discount2 {
+  background-image: url(assets/deal-ana.png);
+  width: 370px;
+  height: 201px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.discount3 {
+  background-image: url(assets/deal-zabo.png);
+  width: 755px;
+  height: 425px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 1 / 3;
+}
+
+.discount {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1140px;
+  margin-left: 200px;
+  margin-top: 120px;
+}
+.discount-title1 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "noto serif", serif;
+}
+
+.discount-title2 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "noto serif", serif;
+}
+.discount-title3 {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "noto serif", serif;
+}
+.shop-now {
+  color: white;
+}
 /* responsive mobile  */
 
 /* nav  */
