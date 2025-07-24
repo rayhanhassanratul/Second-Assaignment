@@ -331,7 +331,7 @@ body {
     margin-top: 10px;
     width: 360px;
     height: 245px;
-    margin-left: 35px;
+    margin-left: 50px;
   }
 
   .banner-title {
@@ -341,8 +341,8 @@ body {
 
   .banner-info {
     padding-top: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 10px;
   }
 
   .cart {
@@ -363,7 +363,7 @@ body {
     grid-template-columns: repeat(2, 2fr);
     width: 100%;
     margin-right: 20px;
-    margin-left: -5px;
+    margin-left: 20px;
   }
 
   .plants {
@@ -406,10 +406,9 @@ body {
   }
 
   .love-info {
-    padding-left: 10px;
-
     width: 361px;
     height: 234px;
+    margin-left: 20px;
   }
 
   .love-des {
@@ -432,12 +431,12 @@ body {
   .latest-deals {
     padding: 0px 28px 0px 28px;
     margin-top: 200px;
-    margin-left: -5px;
+    margin-left: 20px;
   }
 
   .discount {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 15px;
+    margin-left: 40px;
 
     margin-top: 50px;
   }
