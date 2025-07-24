@@ -119,10 +119,13 @@ body {
 
 .lover {
   margin-left: 200px;
+  margin-right: 150px;
 }
 
 .love-info {
   margin-top: 50px;
+  height: 520px;
+  width: 540px;
 }
 .lover-title {
   font-size: 50px;
@@ -131,8 +134,6 @@ body {
 }
 
 .flower-img {
-  width: 540px;
-  height: 650px;
 }
 
 .love-des {
@@ -162,6 +163,7 @@ body {
 .deals-description {
   font-family: "inter", serif;
   font-size: 22px;
+  margin-left: 300px;
 }
 
 .deals-title {
@@ -387,6 +389,7 @@ body {
 
   .flower-img {
     height: 396px;
+    margin-left: 20px;
   }
 
   .lover-title {
@@ -395,6 +398,7 @@ body {
 
   .list-disc {
     font-size: 14px;
+    width: 360px;
   }
 
   .love-info {
@@ -407,6 +411,8 @@ body {
   }
   .deals-description {
     font-size: 14px;
+    margin-left: 10px;
+    width: 335px;
   }
 
   .latest-deals {
