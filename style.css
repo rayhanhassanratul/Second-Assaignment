@@ -179,6 +179,7 @@ body {
 /* discount section */
 .discount1 {
   background-image: url(assets/deal-bloom.png);
+  background-repeat: no-repeat;
   width: 370px;
   height: 201px;
   border-radius: 14px;
@@ -193,6 +194,7 @@ body {
 
 .discount2 {
   background-image: url(assets/deal-ana.png);
+  background-repeat: no-repeat;
   width: 370px;
   height: 201px;
   border-radius: 14px;
@@ -360,6 +362,8 @@ body {
   .cards {
     grid-template-columns: repeat(2, 2fr);
     width: 100%;
+    margin-right: 20px;
+    margin-left: -5px;
   }
 
   .plants {
@@ -402,14 +406,22 @@ body {
   }
 
   .love-info {
-    padding-left: 20px;
+    padding-left: 10px;
+
     width: 361px;
     height: 234px;
+  }
+
+  .love-des {
+    width: 360px;
+    height: 50px;
+    font-size: 14px;
   }
 
   /* deals section */
   .deals-title {
     font-size: 28px;
+    margin-left: 27px;
   }
   .deals-description {
     font-size: 14px;
@@ -419,12 +431,14 @@ body {
 
   .latest-deals {
     padding: 0px 28px 0px 28px;
-    margin-top: 500px;
+    margin-top: 200px;
+    margin-left: -5px;
   }
 
   .discount {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 20px;
+    margin-left: 15px;
+
     margin-top: 50px;
   }
 
@@ -436,6 +450,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
   }
 
   .discount-title3 {
@@ -459,7 +474,7 @@ body {
 
   .join {
     height: 275px;
-    width: 100%;
+    width: 105%;
     margin-top: 40px;
   }
 
