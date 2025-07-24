@@ -311,7 +311,7 @@ body {
 
   .navbar {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 0px;
     padding: 0px 20px 0px 20px;
   }
 
@@ -468,10 +468,12 @@ body {
   }
 
   /* footer section */
+
   .footer-container {
     flex-direction: column;
     margin-left: 20px;
     gap: 10px;
+    margin-bottom: 600px;
   }
   .links {
     flex-direction: column;
