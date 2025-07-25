@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: #fefefe;
   max-width: 1560px;
 }
 /* shared styles  */
@@ -327,12 +328,12 @@ body {
 }
 
 /* footer */
+
 .footer-container {
   max-height: 1120px;
   max-height: 250px;
   margin-left: 160px;
   margin-right: 160px;
-  margin-top: 70px;
   padding-bottom: 70px;
 }
 /* responsive mobile  */
@@ -388,7 +389,7 @@ body {
 
   .banner-title {
     font-size: 25px;
-    width: 60%;
+    width: 80%;
   }
   .banner-description {
     font-size: 14px;
@@ -479,10 +480,9 @@ body {
   /* deals section */
   .deals-title {
     font-size: 35px;
-    margin-left: 27px;
   }
   .deals-description {
-    font-size: 18px;
+    font-size: 14px;
 
     width: 90%;
   }
@@ -503,17 +503,17 @@ body {
 
   .discount1 {
     margin-left: 15px;
-    width: 330px;
+    width: 93%;
     margin-right: 30px;
   }
   .discount2 {
     margin-left: 15px;
-    width: 330px;
+    width: 93%;
     margin-right: 30px;
   }
 
   .discount3 {
-    width: 330px;
+    width: 93%;
     height: 201px;
     border-radius: 14px;
     display: flex;
@@ -565,7 +565,16 @@ body {
     flex-direction: column;
     gap: 20px;
   }
-  .items {
-    margin-bottom: 50px;
+
+  .footer-des {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 170%;
+    margin-bottom: 20px;
+  }
+
+  .loogos {
+    margin-top: 20px;
+    height: 36px;
   }
 }
