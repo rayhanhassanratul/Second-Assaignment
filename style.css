@@ -503,13 +503,15 @@ body {
 
   .discount1 {
     margin-left: 30px;
+    width: 330px;
   }
   .discount2 {
     margin-left: 30px;
+    width: 330px;
   }
 
   .discount3 {
-    width: 370px;
+    width: 330px;
     height: 201px;
     border-radius: 14px;
     display: flex;
