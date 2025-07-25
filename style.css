@@ -1,5 +1,11 @@
 @import "Tailwindcss";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   max-width: 1560px;
 }
@@ -15,8 +21,9 @@ body {
 
 /* nav bar styles  */
 .navbar {
-  margin-left: 200px;
+  margin-left: 150px;
   margin-right: 150px;
+  max-width: 1200px;
 }
 
 .nav-link {
@@ -35,12 +42,17 @@ body {
 
 /* banner section styles */
 .banner {
-  width: 1200px;
-  margin-top: 230px;
-  margin-left: 180px;
+  max-width: 1200px;
+  margin: 230px auto 0px auto;
+  margin-left: 150px;
+  margin-right: 150px;
+  padding: 0px;
+  justify-content: space-between;
+  width: 100%;
 }
 .banner-info {
-  padding-top: 162px;
+  padding-top: 220px;
+  flex: 1;
 }
 
 .banner-title {
@@ -51,14 +63,21 @@ body {
 
 .banner-img {
   margin-top: 100px;
-  width: 670px;
-  height: 455px;
+  width: 650px;
+  height: auto;
+  flex-shrink: 0;
+}
+.banner-img img {
+  width: 100%;
+  height: auto;
 }
 
 /* plants and card section  */
 .plants {
-  margin-left: 200px;
+  margin-left: 150px;
   margin-right: 150px;
+  max-width: 1200px;
+  margin-top: 100px;
 }
 .palnt-title {
   font-family: "noto serif", serif;
@@ -69,6 +88,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .plant-description {
   font-family: "inter" serif;
@@ -118,7 +138,8 @@ body {
 /* flowers lover section */
 
 .lover {
-  margin-left: 200px;
+  max-width: 1200px;
+  margin-left: 150px;
   margin-right: 150px;
 }
 
@@ -128,6 +149,7 @@ body {
   width: 540px;
 }
 .lover-title {
+  width: 70%;
   font-size: 50px;
   font-weight: bold;
   font-family: "noto serif", serif;
@@ -173,7 +195,8 @@ body {
 .deals-description {
   font-family: "inter", serif;
   font-size: 22px;
-  margin-left: 300px;
+  text-align: center;
+  width: 70%;
 }
 
 .deals-title {
@@ -183,12 +206,19 @@ body {
 }
 
 .latest-deals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
   margin-top: 140px;
+  margin-left: 140px;
 }
 
 /* discount section */
 .discount1 {
   background-image: url(assets/deal-bloom.png);
+
   background-repeat: no-repeat;
   width: 370px;
   height: 201px;
@@ -197,9 +227,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* grid-column: 1;
-  grid-row: 1; */
 }
 
 .discount2 {
@@ -212,8 +239,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* grid-column: 1;
-  grid-row: 2; */
+  margin-top: 28px;
 }
 
 .discount3 {
@@ -312,19 +338,19 @@ body {
 /* responsive mobile  */
 
 /* nav  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 656px) {
   .hide {
     display: none;
   }
 
   .logo img {
     width: 70px;
+    height: auto;
   }
 
   .navbar {
-    width: 100%;
     margin-left: 10px;
-    margin-right: 0px;
+    margin-right: 10px;
     padding: 0px 20px 0px 20px;
   }
 
@@ -336,25 +362,41 @@ body {
   .banner {
     flex-direction: column-reverse;
     width: 100%;
-    margin: 0;
+    padding: 0;
+    align-items: flex-start;
+    margin-top: 50px;
+    overflow-x: hidden;
+    margin-left: -10px;
   }
   .banner-img {
     margin-top: 10px;
-    width: 393px;
+    width: 100vw;
     height: 245px;
-    margin-left: 50px;
-    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .banner-img img {
+    width: 393px;
+    max-width: none;
+    height: auto;
+    object-fit: contain;
   }
 
   .banner-title {
     font-size: 25px;
     width: 60%;
   }
-
+  .banner-description {
+    font-size: 14px;
+    max-width: 100%;
+  }
   .banner-info {
-    padding-top: 16px;
-    padding-left: 30px;
-    padding-right: 10px;
+    padding: 20px 26px 0px 26px;
+    width: 100%;
   }
 
   .cart {
@@ -368,23 +410,26 @@ body {
   }
   .plant-description {
     font-size: 14px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 16px 0px 16px;
   }
 
   .cards {
-    grid-template-columns: repeat(2, 2fr);
-    width: 100%;
-    margin-right: 20px;
-    margin-left: 20px;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 32px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .plants {
     margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 65px;
+    margin-right: 10px;
+    margin-top: 40px;
+    max-width: 100%;
   }
   .card {
-    width: 171px;
+    width: 100%;
+    padding: 0px 10px;
   }
 
   .card-btn {
@@ -404,40 +449,42 @@ body {
   }
 
   .flower-img {
-    height: 396px;
-    margin-left: 20px;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
   }
 
   .lover-title {
     font-size: 30px;
+    width: 100%;
   }
 
   .list-disc {
     font-size: 14px;
-    width: 360px;
+    margin: 0px;
+    padding-left: 16px;
   }
 
   .love-info {
-    width: 361px;
-    height: 234px;
-    margin-left: 20px;
+    width: 100%;
+    height: auto;
+    margin-left: 0 auto;
   }
 
   .love-des {
-    width: 360px;
-    height: 50px;
-    font-size: 14px;
+    font-size: 20px;
+    width: 100%;
   }
 
   /* deals section */
   .deals-title {
-    font-size: 28px;
+    font-size: 35px;
     margin-left: 27px;
   }
   .deals-description {
-    font-size: 14px;
-    margin-left: 10px;
-    width: 335px;
+    font-size: 18px;
+
+    width: 90%;
   }
 
   .latest-deals {
@@ -448,9 +495,17 @@ body {
 
   .discount {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 40px;
+    margin: 0px auto;
 
+    width: 100%;
     margin-top: 50px;
+  }
+
+  .discount1 {
+    margin-left: 30px;
+  }
+  .discount2 {
+    margin-left: 30px;
   }
 
   .discount3 {
@@ -462,6 +517,7 @@ body {
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    margin-left: 30px;
   }
 
   .discount-title3 {
