@@ -156,6 +156,16 @@ body {
   transform: translateX(-86%);
   width: 286px;
   z-index: 10;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(-86%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-86%) rotate(360deg);
+  }
 }
 
 /* deals section */
