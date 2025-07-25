@@ -94,6 +94,7 @@ body {
 .plant-description {
   font-family: "inter" serif;
   font-size: 22px;
+  width: 70%;
 }
 
 .cards {
@@ -217,10 +218,12 @@ body {
 }
 
 /* discount section */
+/* discount section */
 .discount1 {
   background-image: url(assets/deal-bloom.png);
-
+  width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 370px;
   height: 201px;
   border-radius: 14px;
@@ -232,7 +235,9 @@ body {
 
 .discount2 {
   background-image: url(assets/deal-ana.png);
+  width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 370px;
   height: 201px;
   border-radius: 14px;
@@ -245,6 +250,9 @@ body {
 
 .discount3 {
   background-image: url(assets/deal-zabo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   width: 755px;
   height: 425px;
   border-radius: 22px;
@@ -252,15 +260,42 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* grid-column: 2;
-  grid-row: 1 / 3; */
+}
+
+.discount1::before,
+.discount2::before,
+.discount3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.discount1,
+.discount2,
+.discount3 {
+  position: relative;
+  z-index: 1;
+}
+
+.discount1 > *,
+.discount2 > *,
+.discount3 > * {
+  z-index: 1;
+  position: relative;
 }
 
 .discount {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
-
-  margin-left: 200px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin-left: 150px;
+  margin-right: 150px;
   margin-top: 120px;
 }
 .discount-title1 {
@@ -328,7 +363,10 @@ body {
 }
 
 /* footer */
-
+footer {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
 .footer-container {
   max-height: 1120px;
   max-height: 250px;
@@ -336,10 +374,19 @@ body {
   margin-right: 160px;
   padding-bottom: 70px;
 }
+
+.footer-des {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.links {
+  margin-left: -220px;
+}
 /* responsive mobile  */
 
 /* nav  */
-@media screen and (max-width: 656px) {
+@media screen and (max-width: 768px) {
   .hide {
     display: none;
   }
@@ -367,7 +414,7 @@ body {
     align-items: flex-start;
     margin-top: 50px;
     overflow-x: hidden;
-    margin-left: -10px;
+    margin-left: -0.2px;
   }
   .banner-img {
     margin-top: 10px;
@@ -389,11 +436,13 @@ body {
 
   .banner-title {
     font-size: 25px;
-    width: 80%;
+    width: 60%;
   }
   .banner-description {
     font-size: 14px;
     max-width: 100%;
+    margin-top: 12px;
+    width: 100%;
   }
   .banner-info {
     padding: 20px 26px 0px 26px;
@@ -412,6 +461,8 @@ body {
   .plant-description {
     font-size: 14px;
     padding: 0px 16px 0px 16px;
+    width: 100%;
+    margin-top: 8px;
   }
 
   .cards {
@@ -423,7 +474,7 @@ body {
   }
 
   .plants {
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 10px;
     margin-top: 40px;
     max-width: 100%;
@@ -447,6 +498,7 @@ body {
     margin-right: 20px;
     margin-left: 20px;
     gap: 7px;
+    margin-top: -120px;
   }
 
   .flower-img {
@@ -458,12 +510,13 @@ body {
   .lover-title {
     font-size: 30px;
     width: 100%;
+    margin-top: -20px;
   }
 
   .list-disc {
     font-size: 14px;
     margin: 0px;
-    padding-left: 16px;
+    padding-left: 26px;
   }
 
   .love-info {
@@ -480,11 +533,12 @@ body {
   /* deals section */
   .deals-title {
     font-size: 35px;
+    margin-left: 24px;
+    margin-top: -100px;
   }
   .deals-description {
-    font-size: 14px;
-
-    width: 90%;
+    font-size: 18px;
+    width: 95%;
   }
 
   .latest-deals {
@@ -494,34 +548,22 @@ body {
   }
 
   .discount {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 0px auto;
-
-    width: 100%;
-    margin-top: 50px;
+    grid-template-columns: 1fr;
+    margin: 50px 16px 0 16px;
+    gap: 24px;
   }
 
-  .discount1 {
-    margin-left: 15px;
-    width: 93%;
-    margin-right: 30px;
-  }
-  .discount2 {
-    margin-left: 15px;
-    width: 93%;
-    margin-right: 30px;
-  }
-
+  .discount1,
+  .discount2,
   .discount3 {
-    width: 93%;
-    height: 201px;
+    width: 100%;
+    height: 230px;
     border-radius: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 30px;
-    margin-left: 15px;
+    margin: 0; /* remove extra margin */
+  }
+
+  .discount2 {
+    margin-top: 16px;
   }
 
   .discount-title3 {
@@ -559,22 +601,25 @@ body {
     flex-direction: column;
     margin-left: 20px;
     gap: 10px;
-    margin-bottom: 600px;
-  }
-  .links {
-    flex-direction: column;
-    gap: 20px;
+    margin-bottom: 500px;
   }
 
   .footer-des {
-    margin-top: 20px;
-    font-size: 18px;
-    width: 170%;
+    margin-top: 16px;
+  }
+  .links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .items {
     margin-bottom: 20px;
   }
 
   .loogos {
-    margin-top: 20px;
-    height: 36px;
+    margin-top: 30px;
+  }
+  .links {
+    margin-left: 0px;
   }
 }
