@@ -312,6 +312,7 @@ body {
   }
 
   .navbar {
+    width: 100%;
     margin-left: 10px;
     margin-right: 0px;
     padding: 0px 20px 0px 20px;
@@ -329,9 +330,10 @@ body {
   }
   .banner-img {
     margin-top: 10px;
-    width: 380px;
+    width: 393px;
     height: 245px;
     margin-left: 50px;
+    background-size: cover;
   }
 
   .banner-title {
